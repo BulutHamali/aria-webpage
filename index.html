@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Design Co. Official Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header role="banner">
+        <h1>Accessible Design Company</h1>
+        <nav role="navigation" aria-label="Main navigation">
+            <ul>
+                <li><a href="#home" aria-current="page">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <article>
+                <p>We are a company dedicated to providing great services.</p>
+                <img src="team.jpg" alt="Team members stacking hands over a table with a laptop and charts, symbolizing collaboration.">
+            </article>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="grid-container">
+                <article>
+                    <img src="website-design.jpg" alt="Computer screen showing a website with 'WEB DESIGN' text and a potted plant, surrounded by icons like a paintbrush and lightbulb, symbolizing accessible website design">
+                    <h3>Accessible Website Design and Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi obcaecati delectus architecto, omnis deleniti aut? Rem asperiores, voluptate, tempora optio dolorem mollitia suscipit reiciendis aliquam earum reprehenderit qui laboriosam! Aut!</p>
+                </article>
+                <article>
+                    <img src="accessibility-audit.jpg" alt="Group of people in a meeting around a table with laptops, documents, and a 'MARKETING PLAN' binder, discussing accessibility audits and consulting">
+                    <h3>Accessibility Audits and Consulting</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eaque eius, reprehenderit aliquid natus sapiente deserunt voluptas repellat a, ratione distinctio quae dolorum minima maiores facere autem, labore doloribus? Incidunt.</p>
+                </article>
+                <article>
+                    <img src="uxui-design.jpg" alt="Grid of colorful icons representing accessibility features, including a brain, ear, eye, screen, and hands, symbolizing accessible UX/UI design.">
+                    <h3>Accessible UX/UI Design</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam laudantium sit commodi distinctio provident ducimus repellendus cupiditate aperiam? Laborum, distinctio tempore repellendus nesciunt velit numquam provident vero suscipit atque corporis?</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form aria-describedby="form-instructions">
+                <p id="form-instructions">Please fill out all fields to get in touch with us.</p>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required aria-describedby="name-error">
+                    <span id="name-error" class="error" aria-live="polite"></span>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required aria-describedby="email-error">
+                    <span id="email-error" class="error" aria-live="polite"></span>
+                </div>
+                <div>
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required aria-describedby="subject-error">
+                    <span id="subject-error" class="error" aria-live="polite"></span>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required aria-describedby="message-error"></textarea>
+                    <span id="message-error" class="error" aria-live="polite"></span>
+                </div>
+                <button type="submit" aria-label="Submit contact form">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+</body>
+</html>
