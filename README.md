@@ -28,7 +28,6 @@ This is a static website for **Accessible Design Co**, a fictional company focus
 - **Accessibility**:
   - Added ARIA roles and attributes to enhance screen reader compatibility, such as `role="banner"` for the header and `aria-live="polite"` for form error messages.
   - Ensured the contact form had accessible labels, `required` attributes, and `aria-describedby` for instructions and errors.
-  - Conducted basic testing with a screen reader (NVDA) to confirm that key elements, like navigation and form fields, were announced correctly.
 
 ### What tools or resources did you find most helpful during this project?
 - **Tools**:
